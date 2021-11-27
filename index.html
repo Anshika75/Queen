@@ -1,0 +1,369 @@
+<!-----PLEASE PLEASE PLEASE-------->
+<!-------READ THESE LINES--------->
+
+<!-----I am very new to coding so this code can appear boring ---->
+<!------This is very simple --->
+<!-----No. of days i commited to this code = 1----->
+<!----I will not request you all to upvote because that's not the reason i created it---->
+<!----My only aim to create this is self improvement---->
+<!----So please help me in my journey of self improvement by writing your opinions in comments---->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700;900&family=Tangerine:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    height: 100vh;
+    width: 100vw;
+    background-color: cadetblue;
+    background: linear-gradient(15deg, #28c1ce 30%, #7dcede 70%);
+    display: grid;
+    place-items: center;
+}
+.box{
+    height: 350px;
+    width: 300px;
+    background-color: #141f23;
+    position: relative;
+    border-bottom: 10px solid #141f23;
+    box-shadow: 0 0 0.75vmin 0.75vmin #1115;
+}
+.body{
+    height: 100px;
+    width: 200px;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #d8d8d8;
+    background: linear-gradient(0deg, #1b9cf7 60%, #d8d8d8 30%);
+    border-radius: 50px 50px 5px 5px;
+}
+.body::before{
+    content: "";
+    height: 40px;
+    border-radius: 5px 0 0 5px;
+    width: 120px;
+    position: absolute;
+    top: 30px;
+    background-color: #1cb0f6;
+    transform: rotate(10deg) translateX(-12%);
+    left: 0%;
+}
+.body::after{
+    content: "";
+    height: 40px;
+    border-radius: 0 5px 5px 0;
+    width: 120px;
+    position: absolute;
+    top: 30px;
+    background-color: #1cb0f6;
+    transform: rotate(-10deg) translateX(12%);
+    right: 0%;
+}
+.neck{
+    position: absolute;
+    bottom: 75px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 35px;
+    width: 75px;
+    background-color: #ffb900;
+    border-radius: 10px 10px 20px 20px;
+}
+.neck::before{
+    content: "";
+    height: 40px;
+    border-radius: 0 0 10px 10px;
+    width: 50px;
+    position: absolute;
+    bottom: 20px;
+    background-color: #d8d8d8;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.hair{
+    height: 55px;
+    width: 160px;
+    border-radius: 50px 50px 50px 50px;
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4b4b4b;
+}
+.hair::before{
+    content: "";
+    position: absolute;
+    height: 85px;
+    width: 210px;
+    border-radius: 50px 50px 50px 50px;
+    bottom: 45px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #4b4b4b;
+
+}
+.face{
+    height: 130px;
+    width: 120px;
+    position: absolute;
+    bottom: 115px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #d8d8d8;
+    border-radius: 50px 50px 50px 50px;
+}
+.face::before{
+    content: "";
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: #d8d8d8;
+    top: 50%;
+    transform: translateX(-60%) translateY(-50%);
+}
+.face::after{
+    content: "";
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: #d8d8d8;
+    top: 50%;
+    right: 0;
+    transform: translateX(60%) translateY(-50%);
+}
+.crownbase{
+    position: absolute;
+    bottom: 225px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 35px;
+    width: 130px;
+    background-color: #ffb900;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.crownbase::before{
+    content: "";
+    position: absolute;
+    height: 12px;
+    width: 150px;
+    background-color: #ffd300;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+}
+.crownbase::after{
+    content: "";
+    position: absolute;
+    height: 12px;
+    width: 150px;
+    background-color: #ffd300;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    bottom: 0;
+}
+.crownred{
+    position: absolute;
+    bottom: 255px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 45px;
+    width: 120px;
+    background: linear-gradient(0deg, #e03636 50%, #f24848 50%);
+    border-radius: 30px;
+}
+.crownyel{
+    position: absolute;
+    bottom: 258px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 40px;
+    width: 140px;
+    background: linear-gradient(0deg, #ffb900 50%, #fed200 50%);
+    border-radius: 30px;
+}
+.gemstand{
+    position: absolute;
+    bottom: 255px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 45px;
+    width: 40px;
+    background: linear-gradient(0deg, #ffb900 50%, #fed200 50%);
+}
+.gemstand::before{
+    content: "";
+    position: absolute;
+    height: 17px;
+    top: -12px;
+    width: 55px;   
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ffd300;
+    border-radius: 100px;
+}
+.gemstand::after{
+    content: "";
+    position: absolute;
+    height: 20px;
+    top: -25px;
+    width: 20px;   
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ffd300;
+    border-radius: 25px 25px 0 0;
+}
+.gem{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -8px;
+    height: 25px;
+    width: 17px; 
+    border-radius: 10px;
+    background-color: #1c9bf6;
+    z-index: 10;
+    box-shadow: inset 0px 5px 0px #e03636;
+}
+.crownbase div{
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #1c9bf6;
+}
+.real{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    height: 45px;
+    width: 45px;
+    /* background-color: #1b9cf7; */
+    border: 3px solid #1b9bf7a4;
+    overflow: hidden;
+}
+.real img{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.real i{
+    color: rgba(0, 0, 0, 0.562);
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,100%);
+    font-size: 0.8rem;
+    height: 100%;
+    width: 100%;
+    background-color: #fff3;
+    display: grid;
+    place-items: center;
+    transition: all 0.5s ease-in-out;
+}
+.real:hover i{
+    transform: translate(-50%,-50%);
+}
+.real i:hover{
+    color: rgba(0, 0, 0, 0.74);
+}
+.loading{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: #141f23;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: load 3s 2s linear both;
+}
+.loading h2{
+    background: linear-gradient(15deg, #28c1ce 30%, #7dcede 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 7px;
+    font-family: 'Raleway', sans-serif;
+    font-weight:900;
+    margin-top:30px;
+    font-size:2.3rem;
+}
+.loading p{
+    background: linear-gradient(15deg, #f2f0f6 30%, #fdf1bf 70%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* letter-spacing: 2px; */
+    margin-top: 30px;
+    padding: 15px;
+    text-align: center;
+    line-height: 2rem;
+    font-weight:700;
+    font-family: 'Tangerine', cursive;
+    word-spacing:5px;
+    font-size:1.5rem;
+}
+@keyframes load{
+    90%{
+        opacity: 0;
+    }
+    100%{
+        z-index: -100;
+    }
+}
+</style>
+    <main>
+        <div class="box">
+            <div class="hair"></div>
+            <div class="body"></div>
+            <div class="neck"></div>
+            <div class="face"></div>
+            <div class="crownyel"></div>
+            <div class="crownred"></div>
+            <div class="gemstand">
+                <div class="gem"></div>
+            </div>
+            <div class="crownbase">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="real">
+                <a href="https://pl.duolingo.com/dictionary/English/queen/2f8fd3d61b6230b8660aba04e63c1a96?hcb=1"><i class="fas fa-search"></i></a>
+                <img src="https://www.dropbox.com/s/76lqmmqktembveo/queen.jpg?dl=1" alt="queen">
+
+            </div>
+        </div>
+    </main>
+    <div class="loading">
+        <h2>LOADING...</h2>
+        <p>"Be A Queen, Who is not afraid to fail, As failure is another stepping stone to Greatness. Let your inner Queen's voice come through loud and clear. Be strong, be authentic, be you...."</p>
+    </div>
+</body>
+</html>
